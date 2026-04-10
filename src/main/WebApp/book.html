@@ -1,24 +1,29 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Book Ticket</title>
+    <meta charset="UTF-8">
+    <title>Book Ticket | TicketManager</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <a href="index.jsp">Home</a>
-        <a href="bookTicket.jsp">Book Ticket</a>
-        <a href="viewTickets.jsp">View Tickets</a>
+        <a href="index.html">Home</a>
+        <a href="book.html">Book Ticket</a>
     </nav>
     <div class="container">
-        <h2>Book a New Ticket</h2>
-        <form action="viewTickets.jsp" method="POST">
-            <label>Full Name:</label>
-            <input type="text" name="passenger" placeholder="Enter your name" required>
-            <label>Destination:</label>
-            <input type="text" name="destination" placeholder="Where are you going?" required>
-            <button type="submit">Submit Booking</button>
+        <h1>Book Your Ticket</h1>
+        <p>Enter your details to process your booking via Java.</p>
+        <hr>
+        <form action="success.html" method="GET">
+            <input type="text" name="passengerName" placeholder="Full Name" required 
+                   style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+            
+            <input type="text" name="destination" placeholder="Destination" required 
+                   style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+            
+            <button type="submit" style="width: 100%; padding: 12px; background-color: #1abc9c; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Process Booking
+            </button>
         </form>
     </div>
 </body>

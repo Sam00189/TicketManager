@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TicketManager | Book Ticket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="book.html">Book Ticket</a>
+    </nav>
+
+    <div class="container">
+        <h1>Book Your Ticket</h1>
+        <p>Enter your details to process your booking via Java.</p>
+        <hr>
+        
+        <form action="confirmBooking" method="POST">
+            <input type="text" name="passengerName" placeholder="Full Name" required 
+                   style="width: 100%; padding: 10px; margin: 10px 0;">
+            
+            <input type="text" name="destination" placeholder="Destination" required 
+                   style="width: 100%; padding: 10px; margin: 10px 0;">
+            
+            <button type="submit">Process Booking</button>
+        </form>
+    </div>
+</body>
+</html>
