@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Book Ticket | TicketManager</title>
+    <title>Book Ticket</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,19 +11,19 @@
         <a href="book.html">Book Ticket</a>
     </nav>
     <div class="container">
-        <h1>Book Your Ticket</h1>
-        <p>Enter your details to process your booking via Java.</p>
-        <hr>
-        <form action="success.html" method="GET">
-            <input type="text" name="passengerName" placeholder="Full Name" required 
-                   style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+        <h2>Enter Passenger Details</h2>
+        <form action="success.html">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter Full Name" required>
             
-            <input type="text" name="destination" placeholder="Destination" required 
-                   style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+            <label>Destination:</label>
+            <input type="text" placeholder="Enter Destination" required>
+
+            <!-- New Input for Issue -->
+            <label>Issue/Problem:</label>
+            <input type="text" name="issue" placeholder="Describe your issue" required>
             
-            <button type="submit" style="width: 100%; padding: 12px; background-color: #1abc9c; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                Process Booking
-            </button>
+            <button type="submit">Confirm Booking</button>
         </form>
     </div>
 </body>
