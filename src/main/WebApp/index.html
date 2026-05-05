@@ -2,19 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TicketManager | Home</title>
+    <title>TicketManager | Login</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="book.html">Book Ticket</a>
+        <a href="index.html">Login</a>
     </nav>
     <div class="container">
         <h1>TicketManager Pro</h1>
-        <p>This project is built and tested automatically using Jenkins.</p>
+        <p>Please login to access the Automated Ticketing System.</p>
         <hr>
-        <button onclick="location.href='book.html'">Start Booking</button>
+        
+        <!-- Login Form -->
+        <form action="book.html" style="display: flex; flex-direction: column; gap: 10px; max-width: 300px; margin: 0 auto;">
+            <label style="text-align: left;">Username:</label>
+            <input type="text" name="username" placeholder="Enter Username" required>
+            
+            <label style="text-align: left;">Password:</label>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            
+            <button type="submit" style="margin-top: 10px;">Login</button>
+        </form>
+        
+        <p style="font-size: 0.8em; margin-top: 20px; color: #7f8c8d;">
+            Securely processed via Jenkins CI/CD Pipeline
+        </p>
     </div>
 </body>
 </html>
