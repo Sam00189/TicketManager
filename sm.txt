@@ -1,0 +1,6 @@
+Unit-test test -DskipTests
+Code-coverage	verify
+Static-analysis	verify
+war	package -DskipTests
+ToArtifactory	install
+Smoke-Test	validate
